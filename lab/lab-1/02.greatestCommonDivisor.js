@@ -23,5 +23,5 @@ function solve(first, second){
     
 }
 
-solve(15, 5);
-solve(2154, 458);
+solve(15, 5); // 5
+solve(2154, 458); // 2
