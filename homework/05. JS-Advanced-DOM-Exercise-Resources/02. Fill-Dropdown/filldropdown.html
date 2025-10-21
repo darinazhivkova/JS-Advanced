@@ -1,0 +1,51 @@
+<!--Problems for in-class lab for the “JavaScript Advanced” course @ SoftUni.
+Submit your solutions in the SoftUni judge system at https://judge.softuni.bg/Contests/1550/Exercise-DOM-Manipulations -->
+
+<!-- 
+
+Запълване на падащо меню
+
+Вашата задача е да вземете стойности от полета за въвеждане с идентификатори "newItemText" и "newItemValue". 
+След това трябва да създадете и добавите <option> към <select> с идентификатор "menu". 
+
+Съвети
+
+· Вашата функция трябва да приема стойностите на newItemText и newItemValue. 
+След това трябва да създадете нов елемент option и да зададете неговия textContent и стойността му на нововзетите стойности.
+
+· След като направите всичко това, трябва да добавите новосъздадената опция като дъщерен елемент към избрания елемент 
+с идентификатор "menu".
+
+· Накрая трябва да изчистите стойността на двете полета за въвеждане.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fill Dropdown</title>
+    <script src="dropdown.js"></script>
+    <link rel="stylesheet" href="filldropdown.css">
+</head>
+
+<body>
+    <h1>Dropdown Menu</h1>
+    <article>
+        <div>
+            <select id="menu"></select>
+        </div>
+        <label for="newItemText">
+            Text:
+        </label>
+        <input type="text" id="newItemText" />
+        <label for="newItemValue">
+            Value:
+        </label>
+        <input type="text" id="newItemValue" />
+        <input type="button" value="Add" onclick="addItem()">
+    </article>
+</body>
+
+</html>

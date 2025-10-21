@@ -1,0 +1,43 @@
+<!--Problems for in-class lab for the “JavaScript Advanced” course @ SoftUni.
+Submit your solutions in the SoftUni judge system at https://judge.softuni.bg/Contests/1550/Exercise-DOM-Manipulations -->
+<!-- 
+    Изваждане
+
+    HTML страница съдържа две текстови полета с идентификатори "firstNumber" и "secondNumber". 
+    Напишете функция за изваждане на стойностите от тези текстови полета и показване на резултата в div с име "result".
+
+    HTML и JavaScript код
+
+    Имплементирайте горното, за да осигурите следната функционалност:
+
+    · Вашата функция трябва да приема стойностите на "firstNumber" и "secondNumber", да ги преобразува в числа, 
+    да извади второто число от първото и след това да добави резултата към <div> с id="result".
+
+    · Вашата функция трябва да може да работи с всякакви 2 числа във входните данни, не само с тези, дадени в примера. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Subtraction</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <input type="text" id="firstNumber" value="13.33" disabled>
+        <input type="text" id="secondNumber" value="22.18" disabled>
+
+        <div id="result"></div>
+    </div>
+    <script src="subtract.js"></script>
+    <script>
+        window.onload = function () {
+            subtract();
+        }
+    </script>
+</body>
+
+</html>
